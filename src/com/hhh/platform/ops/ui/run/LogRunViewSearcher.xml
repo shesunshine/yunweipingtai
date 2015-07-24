@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="24" invisibleBinding="" offsetw="0" offseth="0"
+	defaultWidth="600">
+	<row num="a1" type="composite" style="none" offseth="20">
+		<col num="a12" type="combo" binding="con_select" width="30"
+			offsetw="10" style="border" et="selection"></col>
+		<col num="a12" type="text" binding="con_t" width="50" style="border"></col>
+		
+		<col num="a23" type="label" info="记录日期" width="20" style="right"></col>
+		<col num="a24" type="date" binding="deal_date_start" width="30"
+			style="border,drop_down,medium"></col>
+		<col num="a25" type="label" info="至 " width="10" style="none"></col>
+		<col num="a26" type="date" binding="deal_date_end" width="30"
+			style="border,drop_down,medium"></col>
+		<col num="a12" type="label" info="处理状态" width="30"
+			offsetw="10" style="none" et="selection"></col>
+		<col num="a12" type="combo" binding="deal_status" width="30" style="border"></col>
+		<col num="a27" type="button" binding="search" info="查询" width="15"
+			offsetw="7" style="border"></col>
+		<col num="a29" type="label" info="" width="80" style="none"></col>
+	</row>
+</col>

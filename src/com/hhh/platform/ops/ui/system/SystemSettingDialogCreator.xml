@@ -1,0 +1,13 @@
+<col num="0" type="composite" offsetw="0" offseth="0" defaultWidth="700" defaultHeight="28" defaultStyle="none" invisibleBinding="m.ops_dm_type;m.ops_yw_type" rowWidthEqual="true">
+	<row num="1" type="tabFolder" style="border" offseth="10" maxHeight="460" binding="approveFolder">
+		<col num="11" type="tabItem" info="常规">
+			<row num="21" type="composite" binding="common_c" width="500" height="400">
+			</row>
+		</col>
+		<col num="11" type="tabItem" info="服务器">
+			<row num="21" type="composite" binding="server_c" width="500" height="400">
+			</row>
+		</col>
+	</row>
+	<row num="2" type="composite" width="600" height="1" info="to give a width hint，it is always the max row width" />
+</col>

@@ -1,0 +1,796 @@
+/* System colors and images */
+
+/* All Widgets and Controls */
+* {
+	color: black;
+	background-color: white;
+	font: normal 12px 宋体;
+}
+
+*:disabled {
+	color: black;
+}
+
+*:focused {
+	border: 1px solid #459EF8;
+}
+
+/* Tooltips */
+Widget-ToolTip {
+	background-color: rgb(255, 255, 196);
+	background-image: none;
+	border: 1px solid #aaaaaa;
+	border-radius: 0;
+	font: normal 12px 宋体;
+	color: #4a4a4a;
+	opacity: 1;
+	animation: none;
+	box-shadow: none;
+}
+
+Display {
+	rwt-shadow-color: #a7a6aa;
+	rwt-highlight-color: #ffffff;
+	rwt-darkshadow-color: #85878c;
+	rwt-lightshadow-color: #dcdfe4;
+	rwt-thinborder-color: #aca899;
+	rwt-selectionmarker-color: #fec83c;
+	rwt-infobackground-color: #ffffff;
+	rwt-fontlist: normal 12px 宋体;
+	font: normal 12px 宋体;
+}
+
+/* Button */
+Button {
+	font: normal 12px 宋体;
+	background-image: none;
+	background-color: #459EF8;
+	border: 1px #459EF8;
+	border-radius: 3px;
+	padding: 2px 2px 3px 2px;
+	spacing: 2px;
+	cursor: default;
+	animation: none;
+	color: white;
+	opacity: 1;
+	text-shadow: none;
+}
+
+Button.vipInfoButton {
+	border: 0px;
+	background-color: transparent;
+}
+
+Button.expandItemButton {
+	font: normal 12px 宋体;
+	background-image: none;
+	background-color: #d7ecfe;
+	border: 0px #459EF8;
+	border-radius: 0;
+	padding: 5px 2px 5px 4px;
+	spacing: 2px;
+	cursor: default;
+	animation: none;
+	color: black;
+	opacity: 1;
+	text-shadow: none;
+}
+
+Button.expandItemButton:hover {
+	background-color: #a3d9fb;
+}
+
+Button.expandItemButton:pressed {
+	background-color: #a3d9fb;
+}
+
+Button-FocusIndicator {
+	background-color: #459EF8;
+	border: 1px dotted #459EF8;
+	margin: 1px;
+	padding: 0px;
+	opacity: 1;
+}
+
+Button:disabled {
+	background-color: #f2f1f1;
+	color: gray;
+	border: 1px gray;
+}
+
+Button[CHECK] {
+	background-color: transparent;
+	color: black;
+	border: none;
+}
+
+Button[RADIO] {
+	background-color: transparent;
+	color: black;
+	border: none;
+}
+
+Button[CHECK]:disable,Button[RADIO]:disable {
+	background-color: #f2f1f1;
+	color: black;
+	border: none;
+}
+
+Button:pressed {
+	background-color: transparent;
+}
+
+Button:hover {
+	opacity: 0.7;
+}
+
+Button[RADIO]:hover,Button[CHECK]:hover {
+	background-color: transparent;
+}
+
+Button[RADIO]:pressed,Button[CHECK]:pressed {
+	background-color: transparent;
+}
+
+Button[RADIO]:selected,Button[CHECK]:selected {
+	background-color: transparent;
+}
+
+Button-FocusIndicator[RADIO] {
+	background-color: transparent;
+	border: none;
+}
+
+/* Browser */
+Browser[BORDER] {
+	border: none;
+}
+
+Browser[BORDER] {
+	border: 1px gray;
+}
+
+/* Combo */
+Combo,CCombo {
+	background-color: white;
+	background-image: none;
+	border: 1px solid #d7d7d7;
+	border-radius: 0px;
+}
+
+Combo:disabled,CCombo:disabled,Combo-Button:disabled,CCombo-Button:disabled
+	{
+	background-color: rgb(240, 240, 240);
+	color: black;
+}
+
+Combo-Field,CCombo-Field {
+	padding: 2px 1px 2px 4px;
+}
+
+Combo-Button,CCombo-Button {
+	background-color: white;
+	background-image: none;
+	width: 20px;
+}
+
+Combo-Button:hover,CCombo-Button:hover {
+	background-color: #abe3ff;
+}
+
+/* Composite */
+Composite {
+	background-color: transparent;
+}
+
+Composite.headerArea {
+	background-color: transparent;
+	background-image: url( /theme/images/headerbg.jpg);
+}
+
+Composite.leftHeaderArea {
+	background-color: transparent;
+}
+
+Composite.rightHeaderArea {
+	background-color: transparent;
+	padding: 5px 0px 0px 0px;
+}
+
+Composite.menuBar {
+	background-image: url( /theme/images/menubar.jpg );
+}
+
+Composite.loginAll {
+	border: none;
+	background-image: gradient(linear, left top, left bottom, from(rgb(104, 155, 221)),
+		to(rgb(11, 97, 180)));
+}
+
+Composite.loginMain {
+	background-image: gradient(linear, left top, left bottom, from(rgb(203, 228, 250)),
+		to(rgb(225, 239, 252)));
+}
+
+Composite.searchArea {
+	
+}
+
+CLabel {
+	background-color: transparent;
+	color: black;
+	padding: 2px;
+}
+
+CLabel.orgInfo {
+	color: black;
+	font: 20px 黑体;
+	padding: 20px;
+}
+
+CLabel.loginfo {
+	color: black;
+}
+
+/* CTabFolder */
+CTabFolder {
+	background-color: transparent;
+}
+
+CTabItem {
+	background-color: transparent;
+	background-image: none;
+}
+
+CTabItem:selected {
+	background-color: #759fd6;
+	background-image: none;
+	color: white;
+}
+
+/* DateTime */
+DateTime {
+	background-color: white;
+	border: 1px solid #a4a4a4;
+	border-radius: 0px;
+}
+
+DateTime:disabled,DateTime-DownButton:disabled,DateTime-UpButton:disabled,DateTime-DropDownButton:disabled
+	{
+	background-color: rgb(240, 240, 240);
+	color: black;
+}
+
+DateTime-Field {
+	padding: 2px 2px;
+	background-color: white;
+}
+
+DateTime-Field:selected {
+	padding: 2px 2px;
+	background-color: #abe3ff;
+}
+
+DateTime-UpButton,DateTime-DownButton,DateTime-DropDownButton {
+	background-color: white;
+	background-image: none;
+	width: 20px;
+}
+
+DateTime-DropDownButton:hover {
+	background-color: #abe3ff;
+}
+
+DateTime-Calendar-Day:selected,DateTime-Calendar-Day:selected:hover {
+	background-color: #759fd6;
+	color: white;
+}
+
+DateTime-Calendar-Day:hover {
+	background-color: #abe3ff;
+}
+
+DateTime-Calendar-Day:otherMonth {
+	background-color: transparent;
+	color: rgb(128, 128, 128);
+}
+
+DateTime-Calendar-Navbar {
+	background-color: white;
+	color: black;
+}
+
+DateTime-Calendar-PreviousMonthButton {
+	background-image: url( /theme/images/lastMonth.png );
+	cursor: default;
+}
+
+DateTime-Calendar-NextMonthButton {
+	background-image: url( /theme/images/nextMonth.png );
+	cursor: default;
+}
+
+DateTime-Calendar-PreviousYearButton {
+	background-image: url( /theme/images/lastYear.png );
+	cursor: default;
+}
+
+DateTime-Calendar-NextYearButton {
+	background-image: url( /theme/images/nextYear.png );
+	cursor: default;
+}
+
+/* ExpandBar */
+ExpandBar {
+	color: #046cbf;
+}
+
+ExpandItem {
+	border: 1px solid #8fcdf6;
+}
+
+ExpandItem-Header {
+	background-image: url( /theme/images/expandbar.gif);
+}
+
+/* Group */
+Group {
+	background-color: #D7EDFF;
+	color: #759fd6;
+	font: bold 12px 宋体;
+	color: #759fd6;
+}
+
+Group-Frame {
+	border: 1px solid #759fd6;
+	margin: 5px 3px 5px 3px;
+	padding: 3px 3px 3px 3px;
+}
+
+Group-Label {
+	margin: 3px 3px 1px 5px;
+	padding: 1px 1px 1px 1px;
+	color: white;
+	background-color: #759fd6;
+}
+
+/* Label */
+Label {
+	background-color: transparent;
+	color: black;
+}
+
+Label[SEPARATOR].buttonBarSep {
+	border: 1px #f9f8f8;
+}
+
+Label:hover {
+	text-decoration: none;
+}
+
+Label.n6 {
+	font: normal 6px 宋体;
+}
+
+Label.n7 {
+	font: normal 7px 宋体;
+}
+
+Label.n8 {
+	font: normal 8px 宋体;
+}
+
+Label.n9 {
+	font: normal 9px 宋体;
+}
+
+Label.n10 {
+	font: normal 10px 宋体;
+}
+
+Label.n11 {
+	font: normal 11px 宋体;
+}
+
+Label.n12 {
+	font: normal 12px 宋体;
+}
+
+Label.n13 {
+	font: normal 13px 宋体;
+}
+
+Label.n14 {
+	font: normal 14px 宋体;
+}
+
+Label.n15 {
+	font: normal 15px 宋体;
+}
+
+Label.n16 {
+	font: normal 16px 宋体;
+}
+
+Label.n17 {
+	font: normal 17px 宋体;
+}
+
+Label.n18 {
+	font: normal 18px 宋体;
+}
+
+Label.n19 {
+	font: normal 19px 宋体;
+}
+
+Label.n20 {
+	font: normal 20px 宋体;
+}
+
+Label.n21 {
+	font: normal 21px 宋体;
+}
+
+Label.n22 {
+	font: normal 22px 宋体;
+}
+
+/* Link */
+Link{
+	color: #0000C0;
+	background-color: transparent;
+}
+
+Link-Hyperlink {
+	text-decoration: underline;
+}
+
+Link.expire {
+	border: 1px #8fcdf6;
+}
+
+Link.alarm {
+	border: 1px #8fcdf6;
+}
+
+Link.todo {
+	border: 1px #8fcdf6;
+}
+
+Link-Hyperlink {
+	color: #0000C0;
+}
+
+Link-Hyperlink.todo {
+	color: green;
+}
+
+Link-Hyperlink.alarm {
+	color: #FF4500;
+}
+
+Link-Hyperlink.expire {
+	color: red;
+}
+/* List */
+List {
+	background-color: white;
+	border: none;
+}
+
+List[BORDER] {
+	border: 1px solid #a4a4a4;
+}
+
+List-Item {
+	background-color: transparent;
+	background-image: none;
+}
+
+List-Item:even {
+	background-color: #F4F8FF;
+	background-image: none;
+}
+
+List-Item:hover,List-Item:selected,List-Item:even:hover,List-Item:even:selected
+	{
+	color: white;
+	background-color: #759fd6;
+	background-image: none;
+}
+
+List-Item:selected:unfocused,List-Item:even:selected:unfocused {
+	color: white;
+	background-color: #c0c0c0;
+	background-image: none;
+}
+
+/* Menu */
+Menu {
+	border: 1px rgb(49, 106, 197);
+	padding: 5px;
+}
+
+MenuItem:hover {
+	color: white;
+	background-color: rgb(49, 106, 197);
+}
+
+ProgressBar-Indicator {
+	background-color: green;
+	opacity: 1;
+}
+
+ScrollBar {
+	width: 12px;
+}
+
+ScrollBar-Thumb {
+	min-height: 15px;
+}
+
+/* Shell */
+Shell {
+	background-color: white;
+	background-image: none;
+	border: 1px #F1F2F7;
+	padding: 0px;
+	opacity: 1;
+}
+
+Shell.main {
+	background-color: white;
+	border: none;
+}
+
+Shell[TITLE],Shell[BORDER] {
+	background-color: #DFF1FF;
+	border: 1px #459EF8;
+}
+
+Shell:maximized {
+	border: none;
+}
+
+Shell-Titlebar {
+	color: white;
+	background-color: #459EF8;
+	background-image: none;
+	padding: 0px 0px 0px;
+	height: 38px;
+	margin: 0px;
+	height: 30px;
+	border: none;
+	font: bold 12px 宋体;
+}
+
+Shell-Titlebar:inactive {
+	color: black;
+	background-color: #DDDDDD;
+	background-image: none;
+}
+
+Shell-MinButton,Shell-MaxButton,Shell-CloseButton {
+	margin: 1px 1px 1px 1px;
+}
+
+Shell-DisplayOverlay {
+	animation: none;
+	background-image: none;
+	background-color: #808080;
+	opacity: 0.2;
+}
+
+/* TabFolder */
+TabItem {
+	background-color: transparent;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	background-image: none;
+}
+
+TabItem:selected {
+	background-color: #759fd6;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	color: white;
+}
+
+/* Text */
+Text {
+	border: 1px solid #a4a4a4;
+	padding: 1px 2px 1px 2px;
+	color: black;
+	background-color: white;
+	background-image: none;
+	text-shadow: none;
+	box-shadow: none;
+	border-radius: 0px;
+}
+
+Text:disabled,Text:read-only {
+	background-color: rgb(240, 240, 240);
+	color: black;
+}
+
+/* Toolbar */
+ToolBar {
+	background-color: transparent;
+}
+
+ToolBar.mainToolBar {
+	background-color: transparent;
+}
+
+ToolBar.mainMenuToolBar {
+	background-color: transparent;
+	font: normal 14px 宋体;
+	spacing: 20px;
+}
+
+ToolItem {
+	background-color: transparent;
+	color: #3168d5;
+	padding: 5px;
+}
+
+ToolItem:hover {
+	background-color: #459EF8;
+	/*border: 1px rgb(49, 106, 197);*/
+	border-radius: 2px;
+	color: white;
+}
+
+ToolItem:pressed,ToolItem:selected {
+	border: 1px #1694d4;
+}
+
+ToolItem.mainToolItem {
+	background-color: transparent;
+	border: 0px transparent;
+	color: #e7effa;
+	padding: 0px;
+}
+
+ToolItem.mainMenuToolItem {
+	color: #ebf4fc;
+	padding: 0px;
+	spacing: 0px;
+}
+/*菜单hover时样式*/
+ToolItem.mainMenuToolItem:hover {
+	color: white;
+	border: 0px white;
+	background-image: gradient(linear, left top, left bottom, from(rgb(225, 239, 252)),
+		to(#759fd6));
+	border-radius: 5px;
+}
+
+ToolItem.mainToolItem:hover {
+	border: 1px rgb(49, 106, 197);
+}
+
+/* Table*/
+Table {
+	background-color: white;
+	background-image: none;
+	color: black;
+	border: none;
+}
+
+Table[BORDER] {
+	border: 1px solid #a4a4a4;
+}
+
+TableColumn {
+	background-color: #459EF8;
+	padding: 8px 1px;
+	background-image: none;
+	border-bottom: 1px solid white;
+	text-shadow: none;
+	color: white;
+	font: bold 12px 宋体;
+}
+
+TableItem {
+	background-color: transparent;
+	color: black;
+	text-decoration: none;
+	text-shadow: none;
+	background-image: none;
+}
+
+Table-RowOverlay {
+	background-color: transparent;
+	color: inherit;
+	background-image: none;
+}
+
+TableItem:even,Table-RowOverlay:even {
+	background-color: #DFF1FF;
+}
+
+TableItem:selected,TableItem:selected:hover,Table-RowOverlay:selected,Table-RowOverlay:selected:hover
+	{
+	color: white;
+	background-color: #57B4FA;
+}
+
+TableItem:selected:unfocused,Table-RowOverlay:selected:unfocused {
+	background-color: #c0c0c0;
+}
+
+Table-Cell {
+	spacing: 1px;
+	padding: 6px 1px;
+}
+
+Table-GridLine {
+	color: white;
+}
+
+Table-GridLine:horizontal {
+	color: transparent;
+}
+
+/*Tree*/
+Tree {
+	background-color: white;
+	border: none;
+	color: black;
+}
+
+Tree[BORDER] {
+	border: 1px solid #a4a4a4;
+}
+
+TreeItem {
+	background-color: transparent;
+	color: black;
+	text-decoration: none;
+	text-shadow: none;
+	background-image: none;
+}
+
+Tree-RowOverlay {
+	background-color: transparent;
+	color: inherit;
+	background-image: none;
+}
+
+TreeItem:even,Tree-RowOverlay:even {
+	background-color: #F4F8FF;
+}
+
+TreeItem:selected,TreeItem:selected:hover,Tree-RowOverlay:selected,Tree-RowOverlay:selected:hover
+	{
+	color: white;
+	background-color: #759fd6;
+}
+
+TreeItem:selected:unfocused,Tree-RowOverlay:selected:unfocused {
+	background-color: #c0c0c0;
+}
+
+TreeColumn {
+	background-color: #9bd0fc;
+	padding: 1px 1px;
+	background-image: none;
+	color: black;
+	border-bottom: none;
+	text-shadow: none;
+}
+
+Tree-Cell {
+	spacing: 1px;
+	padding: 3px 1px 2px 1px;
+}
+
+Tree-GridLine {
+	color: #aca899;
+}
+
+Tree-GridLine:horizontal {
+	color: transparent;
+}

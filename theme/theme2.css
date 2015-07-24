@@ -1,0 +1,961 @@
+/* System colors and images 
+#b0c930
+#465F87
+#459EF8
+#358adf
+#DFF1FF
+*/
+
+/* All Widgets and Controls */
+* {
+	color: #333333;
+	background-color: white;
+	font: normal 12px 宋体;
+}
+
+*:disabled {
+	color: #666666;
+}
+
+*:focused {
+	border: 0px solid #459EF8;
+}
+
+/* Tooltips */
+Widget-ToolTip {
+	background-color: rgb(255, 255, 196);
+	background-image: none;
+	border: 1px solid #aaaaaa;
+	border-radius: 0;
+	font: normal 12px 宋体;
+	color: #4a4a4a;
+	opacity: 1;
+	animation: none;
+	box-shadow: none;
+}
+
+Display {
+	rwt-shadow-color: #a7a6aa;
+	rwt-highlight-color: #ffffff;
+	rwt-darkshadow-color: #85878c;
+	rwt-lightshadow-color: #dcdfe4;
+	rwt-thinborder-color: #aca899;
+	rwt-selectionmarker-color: #fec83c;
+	rwt-infobackground-color: #ffffff;
+	rwt-fontlist: normal 12px 宋体;
+	font: normal 12px 宋体;
+}
+
+/* Button */
+Button {
+	font: normal 12px 宋体;
+	background-image: none;
+	background-color: #459EF8;
+	border: 1px #459EF8;
+	border-radius: 0px;
+	padding: 2px 2px 3px 2px;
+	spacing: 2px;
+	cursor: default;
+	animation: none;
+	color: white;
+	opacity: 1;
+	text-shadow: none;
+}
+
+Button.vipInfoButton {
+	border: 0px;
+	background-color: transparent;
+}
+
+Button.expandItemButton {
+	font: normal 12px 宋体;
+	background-image: none;
+	background-color: #d7ecfe;
+	border: 0px #459EF8;
+	border-radius: 0;
+	padding: 5px 2px 5px 4px;
+	spacing: 2px;
+	cursor: default;
+	animation: none;
+	color: #333333;
+	opacity: 1;
+	text-shadow: none;
+}
+
+Button.expandItemButton:hover {
+	background-color: #a3d9fb;
+}
+
+Button.expandItemButton:pressed {
+	background-color: #a3d9fb;
+}
+
+Button-FocusIndicator {
+	background-color: #459EF8;
+	border: 1px dotted #459EF8;
+	margin: 1px;
+	padding: 0px;
+	opacity: 1;
+}
+
+Button:disabled {
+	background-color: #f2f1f1;
+	color: gray;
+	border: 1px gray;
+}
+
+Button[CHECK] {
+	background-color: transparent;
+	color: #333333;
+	border: none;
+}
+
+Button[RADIO] {
+	background-color: transparent;
+	color: #333333;
+	border: none;
+}
+
+Button[CHECK]:disable,Button[RADIO]:disable {
+	background-color: #f2f1f1;
+	color: #333333;
+	border: none;
+}
+
+Button:pressed {
+	background-color: transparent;
+}
+
+Button:hover {
+	opacity: 0.7;
+}
+
+Button[RADIO]:hover,Button[CHECK]:hover {
+	background-color: transparent;
+}
+
+Button[RADIO]:pressed,Button[CHECK]:pressed {
+	background-color: transparent;
+}
+
+Button[RADIO]:selected,Button[CHECK]:selected {
+	background-color: transparent;
+}
+
+Button-FocusIndicator[RADIO] {
+	background-color: transparent;
+	border: none;
+}
+
+Button.add {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/add2.png);
+	background-color: transparent;
+}
+
+Button.add:hover {
+	
+}
+
+Button.read2 {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/read.png);
+	background-color: transparent;
+}
+
+Button.read2:hover {
+	
+}
+
+Button.update {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/update2.png);
+	background-color: transparent;
+}
+
+Button.update:hover {
+	
+}
+
+Button.delete {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/delete2.png);
+	background-color: transparent;
+}
+
+Button.delete:hover {
+	
+}
+
+Button.up {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/up2.png);
+	background-color: transparent;
+}
+
+Button.up:hover {
+	
+}
+
+Button.down {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/down2.png);
+	background-color: transparent;
+}
+
+Button.down:hover {
+	
+}
+
+Button.yes {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/yes2.png);
+	background-color: transparent;
+}
+
+Button.yes:hover {
+	
+}
+
+Button.no {
+	border: 0px #459EF8;
+	background-image: url( /theme/images/no2.png);
+	background-color: transparent;
+}
+
+Button.no:hover {
+}
+
+Button.paging {
+	border: 0px #459EF8;
+	color: black;
+	background-color: transparent;
+}
+
+Button.paging:hover,Button.paging:pressed {
+	color: white;
+	background-color: #459EF8;
+	opacity: 1.0;
+}
+
+Button.add:pressed,Button.update:pressed,Button.delete:pressed,Button.yes:pressed,Button.no:pressed,Button.up:pressed,Button.down:pressed,Button.read2:pressed
+	{
+	border: 0px #459EF8;
+	background-color: transparent;
+}
+
+Button-FocusIndicator.add,Button-FocusIndicator.update,Button-FocusIndicator.read2,Button-FocusIndicator.delete,Button-FocusIndicator.up,Button-FocusIndicator.down,Button-FocusIndicator.yes,Button-FocusIndicator.no
+	{
+	background-color: transparent;
+	border: 1px dotted #459EF8;
+	margin: 0px;
+	padding: 0px;
+	opacity: 1;
+}
+
+/* Browser */
+Browser[BORDER] {
+	border: none;
+}
+
+Browser[BORDER] {
+	border: 1px gray;
+}
+
+/* cccccc */
+Combo,CCombo {
+	background-color: white;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0px;
+}
+
+Combo:disabled,CCombo:disabled,Combo-Button:disabled,CCombo-Button:disabled
+	{
+	background-color: rgb(240, 240, 240);
+	color: #666666;
+}
+
+Combo:focused,CCombo:focused {
+	border: 1px solid #459EF8;
+}
+
+Combo-Field,CCombo-Field {
+	padding: 2px 1px 2px 4px;
+}
+
+Combo-Button,CCombo-Button {
+	background-color: white;
+	background-image: none;
+	width: 20px;
+}
+
+Combo-Button:hover,CCombo-Button:hover {
+	background-color: #abe3ff;
+}
+
+/* Composite */
+Composite {
+	background-color: transparent;
+}
+
+/* 头部 */
+Composite.headerArea {
+	background-color: #459EF8;
+	/*background-image: url( /theme/images/headerbg.jpg);*/
+}
+
+Composite.leftHeaderArea {
+	background-color: transparent;
+}
+
+Composite.centerHeaderArea {
+	background-color: transparent;
+}
+
+Composite.rightHeaderArea {
+	background-color: transparent;
+	padding: 0px 0px 0px 0px;
+}
+
+Composite.loginfo {
+	background-color: #b0c930;
+}
+
+Composite.menuBar {
+	/*background-image: url( /theme/images/menubar.jpg );*/
+	background-image: none;
+}
+
+Composite.loginAll {
+	border: none;
+	background-image: gradient(linear, left top, left bottom, from(rgb(104, 155, 221)),
+		to(rgb(11, 97, 180)));
+}
+
+Composite.loginMain {
+	background-image: gradient(linear, left top, left bottom, from(rgb(203, 228, 250)),
+		to(rgb(225, 239, 252)));
+}
+
+Composite.searchArea {
+	
+}
+
+CLabel {
+	background-color: transparent;
+	color: #333333;
+	padding: 2px;
+}
+
+CLabel.orgInfo {
+	color: #333333;
+	font: 20px 黑体;
+	padding: 20px;
+}
+
+CLabel.loginfo {
+	color: #333333;
+}
+
+/* CTabFolder */
+CTabFolder {
+	background-color: transparent;
+}
+
+CTabItem {
+	background-color: transparent;
+	background-image: none;
+	spacing: 0px;
+}
+
+CTabItem:selected {
+	background-color: #459EF8;
+	background-image: none;
+	color: white;
+	font: normal 12px 宋体;
+}
+
+/* DateTime */
+DateTime {
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 0px;
+}
+
+DateTime:focused {
+	border: 1px solid #459EF8;
+}
+
+DateTime:disabled,DateTime-DownButton:disabled,DateTime-UpButton:disabled,DateTime-DropDownButton:disabled
+	{
+	background-color: rgb(240, 240, 240);
+	color: #666666;
+}
+
+DateTime-Field {
+	padding: 2px 2px;
+	background-color: white;
+}
+
+DateTime-Field:selected {
+	padding: 2px 2px;
+	background-color: #abe3ff;
+}
+
+DateTime-UpButton,DateTime-DownButton,DateTime-DropDownButton {
+	background-color: white;
+	background-image: none;
+	width: 20px;
+}
+
+DateTime-DropDownButton:hover {
+	background-color: #abe3ff;
+}
+
+DateTime-Calendar-Day:selected,DateTime-Calendar-Day:selected:hover {
+	background-color: #459EF8;
+	color: white;
+}
+
+DateTime-Calendar-Day:hover {
+	background-color: #abe3ff;
+}
+
+DateTime-Calendar-Day:otherMonth {
+	background-color: transparent;
+	color: rgb(128, 128, 128);
+}
+
+DateTime-Calendar-Navbar {
+	background-color: white;
+	color: #333333;
+}
+
+DateTime-Calendar-PreviousMonthButton {
+	background-image: url( /theme/images/lastMonth.png );
+	cursor: default;
+}
+
+DateTime-Calendar-NextMonthButton {
+	background-image: url( /theme/images/nextMonth.png );
+	cursor: default;
+}
+
+DateTime-Calendar-PreviousYearButton {
+	background-image: url( /theme/images/lastYear.png );
+	cursor: default;
+}
+
+DateTime-Calendar-NextYearButton {
+	background-image: url( /theme/images/nextYear.png );
+	cursor: default;
+}
+
+/* ExpandBar */
+ExpandBar {
+	color: #046cbf;
+}
+
+ExpandItem {
+	border: 1px solid #8fcdf6;
+}
+
+ExpandItem-Header {
+	background-image: url( /theme/images/expandbar.gif);
+}
+
+/* Group */
+Group {
+	background-color: transparent;
+	color: #459EF8;
+	font: bold 12px 宋体;
+}
+
+Group-Frame {
+	border: 1px solid #459EF8;
+	margin: 5px 3px 5px 3px;
+	padding: 3px 3px 3px 3px;
+}
+
+Group-Label {
+	margin: 3px 3px 1px 5px;
+	padding: 1px 1px 1px 1px;
+	color: white;
+	background-color: #459EF8;
+}
+
+/* Label */
+Label {
+	background-color: transparent;
+	color: #333333;
+}
+
+Label[SEPARATOR].buttonBarSep {
+	border: 1px #f9f8f8;
+}
+
+Label:hover {
+	text-decoration: none;
+}
+
+Label.n6 {
+	font: normal 6px 宋体;
+}
+
+Label.n7 {
+	font: normal 7px 宋体;
+}
+
+Label.n8 {
+	font: normal 8px 宋体;
+}
+
+Label.n9 {
+	font: normal 9px 宋体;
+}
+
+Label.n10 {
+	font: normal 10px 宋体;
+}
+
+Label.n11 {
+	font: normal 11px 宋体;
+}
+
+Label.n12 {
+	font: normal 12px 宋体;
+}
+
+Label.n13 {
+	font: normal 13px 宋体;
+}
+
+Label.n14 {
+	font: normal 14px 宋体;
+}
+
+Label.n15 {
+	font: normal 15px 宋体;
+}
+
+Label.n16 {
+	font: normal 16px 宋体;
+}
+
+Label.n17 {
+	font: normal 17px 宋体;
+}
+
+Label.n18 {
+	font: normal 18px 宋体;
+}
+
+Label.n19 {
+	font: normal 19px 宋体;
+}
+
+Label.n20 {
+	font: normal 20px 宋体;
+}
+
+Label.n21 {
+	font: normal 21px 宋体;
+}
+
+Label.n22 {
+	font: normal 22px 宋体;
+}
+
+/* Link */
+Link {
+	color: #0000C0;
+	background-color: transparent;
+}
+
+Link-Hyperlink {
+	text-decoration: underline;
+}
+
+Link.expire {
+	border: 1px #8fcdf6;
+}
+
+Link.alarm {
+	border: 1px #8fcdf6;
+}
+
+Link.todo {
+	border: 1px #8fcdf6;
+}
+
+Link-Hyperlink {
+	color: #0000C0;
+}
+
+Link-Hyperlink.todo {
+	color: green;
+}
+
+Link-Hyperlink.alarm {
+	color: #FF4500;
+}
+
+Link-Hyperlink.expire {
+	color: red;
+}
+/* List */
+List {
+	background-color: white;
+	border: none;
+}
+
+List[BORDER] {
+	border: 1px solid #cccccc;
+}
+
+List-Item {
+	background-color: transparent;
+	background-image: none;
+}
+
+List-Item:even {
+	background-color: #DFF1FF;
+	background-image: none;
+}
+
+List-Item:hover,List-Item:selected,List-Item:even:hover,List-Item:even:selected
+	{
+	color: white;
+	background-color: #b0c930;
+	background-image: none;
+}
+
+List-Item:selected:unfocused,List-Item:even:selected:unfocused {
+	
+}
+
+/* Menu */
+Menu {
+	border: 1px rgb(49, 106, 197);
+	padding: 5px;
+}
+
+MenuItem:hover {
+	color: white;
+	background-color: rgb(49, 106, 197);
+}
+
+ProgressBar-Indicator {
+	background-color: green;
+	opacity: 1;
+}
+
+ScrollBar {
+	background-color: #F0F0F0;
+	width: 10px;
+}
+
+ScrollBar-Thumb {
+	background-color: #31619C;
+	border-radius: 6px;
+	min-height: 10px;
+}
+
+ScrollBar-Thumb:hover {
+	background-color: #bbbbbb;
+}
+
+ScrollBar-Thumb:pressed {
+	background-color: #31619C;
+}
+
+/* Shell */
+Shell {
+	background-color: white;
+	background-image: none;
+	border: 0px;
+	padding: 0px;
+	opacity: 1;
+}
+
+Shell.main {
+	background-color: white;
+	border: none;
+}
+
+Shell[TITLE],Shell[BORDER] {
+	background-color: white;
+	border: 0px white;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+Shell:maximized {
+	border: none;
+}
+
+Shell-Titlebar {
+	color: white;
+	background-color: #459EF8;
+	background-image: none;
+	padding: 0px 0px 0px;
+	height: 38px;
+	margin: 0px;
+	height: 30px;
+	border: none;
+	font: bold 12px 宋体;
+}
+
+Shell-Titlebar:inactive {
+	color: #333333;
+	background-color: #cccccc;
+	background-image: none;
+}
+
+Shell-MinButton,Shell-MaxButton,Shell-CloseButton {
+	margin: 1px 1px 1px 1px;
+}
+
+Shell-DisplayOverlay {
+	animation: none;
+	background-image: none;
+	background-color: #808080;
+	opacity: 0.4;
+}
+
+Scale {
+	border: none;
+}
+
+Scale-Thumb:focused {
+	border: 1px solid #459EF8;
+}
+
+Spinner {
+	font: normal 14px 宋体;
+}
+
+Spinner:focused {
+	border: 1px solid #459EF8;
+}
+
+/* TabFolder */
+TabItem {
+	background-color: transparent;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	background-image: none;
+}
+
+TabItem:selected {
+	background-color: #459EF8;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	color: white;
+}
+
+/* Text */
+Text {
+	border: 1px solid #cccccc;
+	padding: 1px 2px 1px 2px;
+	color: #333333;
+	background-color: white;
+	background-image: none;
+	text-shadow: none;
+	box-shadow: none;
+	border-radius: 0px;
+}
+
+Text:disabled,Text:read-only {
+	background-color: rgb(240, 240, 240);
+	color: #666666;
+}
+
+Text:focused {
+	border: 1px solid #459EF8;
+}
+
+/* Toolbar */
+ToolBar {
+	background-color: transparent;
+	padding: 0px;
+	spacing: 0px;
+}
+
+ToolBar.mainToolBar {
+	background-color: transparent;
+	spacing: 0px;
+}
+
+ToolBar.mainMenuToolBar {
+	background-color: transparent;
+	spacing: 20px;
+	padding: 0px;
+}
+
+ToolItem {
+	background-color: transparent;
+	color: #3168d5;
+	padding: 5px;
+}
+
+ToolItem:hover {
+	background-color: #A6CCEE;
+	/*border: 1px rgb(49, 106, 197);*/
+	border-radius: 0px;
+	color: white;
+}
+
+ToolItem:pressed,ToolItem:selected {
+	
+}
+
+ToolItem.mainMenuToolBar {
+	color: white;
+}
+
+ToolItem.mainMenuToolBar:hover {
+	color: white;
+	background-color: #FB9D9D;
+}
+
+ToolItem.mainMenuToolBar:pressed:selected {
+	color: white;
+	background-color: #FB9D9D;
+}
+
+ToolItem.mainToolItem {
+	background-color: transparent;
+	color: white;
+	padding: 0px;
+	spacing: 0px;
+}
+
+ToolItem.mainToolItem:hover {
+	background-color: #FB9D9D;
+}
+
+/* Table*/
+Table {
+	background-color: white;
+	background-image: none;
+	color: #333333;
+	border: none;
+}
+
+Table[BORDER] {
+	border: 1px solid #cccccc;
+}
+
+TableColumn {
+	background-color: #459EF8;
+	padding: 8px 5px;
+	background-image: none;
+	border-bottom: 1px solid white;
+	text-shadow: none;
+	color: white;
+	font: normal 12px 宋体;
+}
+
+TableItem {
+	background-color: transparent;
+	color: #333333;
+	text-decoration: none;
+	text-shadow: none;
+	background-image: none;
+}
+
+Table-RowOverlay {
+	background-color: transparent;
+	color: inherit;
+	background-image: none;
+}
+
+TableItem:even,Table-RowOverlay:even {
+	background-color: #DFF1FF;
+}
+
+TableItem:selected,TableItem:selected:hover,Table-RowOverlay:selected,Table-RowOverlay:selected:hover
+	{
+	color: white;
+	background-color: #b0c930;
+}
+
+TableItem:selected:unfocused,Table-RowOverlay:selected:unfocused {
+	
+}
+
+Table-Cell {
+	spacing: 1px;
+	padding: 6px 1px;
+}
+
+Table-GridLine {
+	color: white;
+}
+
+Table-GridLine:horizontal {
+	color: transparent;
+}
+
+/*Tree*/
+Tree {
+	background-color: white;
+	border: none;
+	color: #333333;
+}
+
+Tree[BORDER] {
+	border: 1px solid #cccccc;
+}
+
+TreeItem {
+	background-color: transparent;
+	color: #333333;
+	text-decoration: none;
+	text-shadow: none;
+	background-image: none;
+}
+
+Tree-RowOverlay {
+	background-color: transparent;
+	color: inherit;
+	background-image: none;
+}
+
+TreeItem:even,Tree-RowOverlay:even {
+	background-color: #DFF1FF;
+}
+
+TreeItem:selected,TreeItem:selected:hover,Tree-RowOverlay:selected,Tree-RowOverlay:selected:hover
+	{
+	color: white;
+	background-color: #b0c930;
+}
+
+TreeItem:selected:unfocused,Tree-RowOverlay:selected:unfocused {
+	
+}
+
+TreeColumn {
+	background-color: #459EF8;
+	padding: 8px 5px;
+	background-image: none;
+	border-bottom: 1px solid white;
+	text-shadow: none;
+	color: white;
+	font: normal 12px 宋体;
+}
+
+Tree-Cell {
+	spacing: 1px;
+	padding: 6px 1px;
+}
+
+Tree-GridLine {
+	color: white;
+}
+
+Tree-GridLine:horizontal {
+	color: transparent;
+}

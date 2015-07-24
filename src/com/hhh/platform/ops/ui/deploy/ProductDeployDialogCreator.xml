@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="26" invisibleBinding="a.re_id" offsetw="0" offseth="0"
+	defaultWidth="300">
+	<row num="a1" type="composite" style="none" offseth="10" offsetw="5">
+		<col num="a11" type="label" info="产品编号" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.pd_code" width="35" offsetw="1"
+			style="border" required="true" info="产品编号"></col>
+		<col num="a12" type="button" binding="pd_select" width="10"
+			offsetw="0" style="border" required="true" info="选择" et="selection"></col>
+		<col num="a11" type="label" info="产品名称" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.pd_name" width="55" offsetw="1"
+			style="border" enable="false" info="产品名称"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10" offsetw="5">
+		<col num="a11" type="label" info="部署编号" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.dp_code" width="45" offsetw="1"
+			style="border" enable="false" info="部署编号"></col>
+		<col num="a11" type="label" info="网站名" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.dp_name" width="55" offsetw="1"
+			style="border" enable="true" info="网站名"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10" offsetw="5">
+		<col num="a11" type="label" info="访问网址" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.url" width="45" offsetw="1"
+			style="border" required="false" info="访问网址"></col>
+		<col num="a11" type="label" info="使用单位" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.organization" width="55"
+			offsetw="1" style="border" enable="true" info="使用单位"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10" height="500"
+		offsetw="5">
+		<col num="a11" type="label" info="远程地址" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.os_addr" width="45" offsetw="1"
+			style="border" required="false" info="远程地址"></col>
+		<col num="a11" type="label" info="账号" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.os_user" width="20"
+			required="false" offsetw="1" style="border" info="账号"></col>
+		<col num="a11" type="label" info="密码" width="14" style="center"></col>
+		<col num="a12" type="text" binding="a.os_password" width="20"
+			offsetw="1" style="border" required="false" info="密码"></col>
+	</row>
+	<row num="a1" type="composite" style="none" height="500" offseth="10"
+		offsetw="5">
+		<col num="a11" type="label" info="WEB容器版本" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.web" width="45" required="false"
+			offsetw="1" style="border" info="web容器版本"></col>
+		<col num="a11" type="label" info="DB版本" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.db" width="55" offsetw="1"
+			style="border" required="false" info="DB版本"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10" height="500"
+		offsetw="5">
+		<col num="a11" type="label" info="DB远程地址" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.db_addr" width="45" offsetw="1"
+			style="border" required="false" info="远程地址"></col>
+		<col num="a11" type="label" info="账号" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.db_user" width="20"
+			required="false" offsetw="1" style="border" info="账号"></col>
+		<col num="a11" type="label" info="密码" width="14" style="center"></col>
+		<col num="a12" type="text" binding="a.db_password" width="20"
+			offsetw="1" style="border" required="false" info="密码"></col>
+	</row>
+	<row num="a1" type="group" style="none" offseth="5" offsetw="1" info="服务器列表">
+		<col num="a1" type="composite" style="none" offseth="5" height="500">
+			<row num="a1" type="composite" style="none" height="120" offsetw="0">
+				<col num="a11" type="composite" style="none" height="120" width="130" offseth="4" binding="server_viewer"></col>
+				<col num="a11" type="composite" style="none" height="120" width="5" offsetw="1" offseth="4" binding="button_bar"></col>
+			</row>
+			<row num="a1" type="composite" style="none" offseth="2">
+				<col num="end_a_c" type="label" info="" width="10" style="none"></col>
+			</row>
+		</col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10" offsetw="5">
+		<col num="a11" type="label" info="部署人" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.dp_user" width="24" offsetw="1"
+			style="border" enable="false"></col>
+		<col num="a11" type="label" info="电话" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.dp_user_tel" width="25"
+			offsetw="1" style="border" enable="false"></col>
+		<col num="a11" type="label" info="部署日期" width="15" style="center"></col>
+		<col num="a12" type="date" binding="a.dp_date" offsetw="1" width="35"
+			style="border,drop_down,medium" enable="false"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10" offsetw="5">
+		<col num="a11" type="label" info="运维人" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.ops_user" width="24"
+			offsetw="1" style="border" enable="true"></col>
+		<col num="a11" type="label" info="电话" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.ops_user_tel" width="25"
+			offsetw="1" style="border" enable="true"></col>
+		<col num="a11" type="label" info="邮箱" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.ops_user_email" offsetw="1"
+			width="35" style="border" enable="true"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="10"
+		defaultHeight="50" offsetw="5">
+		<col num="a11" type="label" info="备注" width="15" style="left"></col>
+		<col num="a12" type="textarea" binding="a.mark" width="116"
+			offsetw="1" style="border" info="备注"></col>
+	</row>
+</col>

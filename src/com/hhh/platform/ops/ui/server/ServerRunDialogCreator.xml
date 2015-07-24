@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="26" invisibleBinding="" offsetw="0" offseth="0"
+	defaultWidth="520">
+	<row num="a1" type="composite" style="none" offseth="10" offsetw="5">
+		<col num="1" type="label" info="日期" width="40" style="center"></col>
+		<col num="2" type="date" binding="date_start" width="120"
+			style="border,drop_down,medium"></col>
+		<col num="3" type="label" info="至" width="40" style="center"></col>
+		<col num="4" type="date" binding="date_end" width="120"
+			style="border,drop_down,medium"></col>
+		<col num="5" type="button" binding="search_b" info="查询" width="40"
+			offsetw="10" et="selection"></col>
+		<col num="1" type="label" info="(日期间隔越大获得图表时间越长，建议3天以内)" width="200" style="center"></col>
+	</row>
+
+	<row num="1" type="tabFolder" offseth="10" maxHeight="600" binding="serverFolder">
+		<col num="6a" type="tabItem" info="CPU监控图" style="none" binding="cpu_item">
+			<row num="71" type="composite" style="none" binding="cpu_c"
+				height="320">
+
+			</row>
+		</col>
+		<col num="6a" type="tabItem" info="RAM监控图" style="none" binding="ram_item">
+			<row num="71" type="composite" style="none" binding="ram_c"
+				height="320">
+
+			</row>
+		</col>
+		<col num="6a" type="tabItem" info="HDD监控图" style="none" binding="hdd_item">
+			<row num="71" type="composite" style="none" binding="hdd_c"
+				height="320">
+
+			</row>
+		</col>
+		<col num="6a" type="tabItem" info="监控表" style="none" binding="table_item"
+			scrollable="false">
+			<row num="a1" type="composite" style="none" offseth="0" offsetw="5">
+				<col num="a1" type="composite" style="border" offseth="0"
+					offsetw="0" width="150" binding="date_time_c" height="320">
+				</col>
+				<col num="a1" type="composite" style="border" offseth="0"
+					offsetw="5" width="400" binding="hdd_view" height="320">
+				</col>
+			</row>
+		</col>
+	</row>
+
+
+
+
+
+</col>

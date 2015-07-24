@@ -1,0 +1,29 @@
+<script type="text/javascript">
+	(function() {
+		try {
+			var e = navigator.userAgent;
+			if (e.indexOf("like Gecko") === -1 && e.indexOf("Gecko/") !== -1) {
+				if (!window.controllers) {
+					window.controllers = {}
+				}
+				if (!navigator.product) {
+					navigator.product = "Gecko"
+				}
+			}
+		} catch (t) {
+		}
+	})()
+</script>
+<script type="text/javascript" src="./WaitingCaller.js"></script>
+<script type="text/javascript" src="./tips_pop.js"></script>
+
+<div style="position: relative; z-index: -100000; width: 100%; height: 100%; background-color: #ard7fb;"></div>
+<div id="ShowWaiting" style="position: absolute; margin-left: -100px; margin-top: -100px; left: 50%; top: 50%; width: 150px; height: 150px; background-color: transparent; text-align: center;">
+	<img src="loading.gif" width="132" height="132" style="margin: 0px 0px 0px 0px" />
+</div>
+
+<div id="winpop" style="width: 200px; height: 0px; position: absolute; right: 0; bottom: 0; border: 1px solid #999999; margin: 0; padding: 1px; overflow: hidden; display: none; background: #FFFFFF">
+	<div id="title" style="width: 100%; height: 22px; line-height: 22px; background: #1C86EE; font-weight: bold; text-align: center; font-size: 13px; color: #FFFFFF;">
+	</div>
+	<div id="content"></div>
+</div>

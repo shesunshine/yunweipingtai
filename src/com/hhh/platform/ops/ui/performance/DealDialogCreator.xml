@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="26" invisibleBinding="a.deal_user" offsetw="0"
+	offseth="0" defaultWidth="300">
+	<row num="a1" type="composite" style="none" offseth="5" offsetw="5">
+		<col num="a11" type="label" info="处理状态" width="15" style="left"></col>
+		<col num="a12" type="combo" binding="a.deal_status" width="35" offsetw="1"
+			style="border" info="处理状态"></col>
+		<col num="a12" type="date" binding="a.deal_date" offsetw="1" width="0"
+			style="border,drop_down,medium" enable="false"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15"
+		defaultHeight="100" offsetw="5">
+		<col num="a11" type="label" info="原因或/n处理方法" width="15" style="left"></col>
+		<col num="a12" type="textarea" binding="a.mark" width="106"
+			offsetw="1" style="border" info="原因/处理方法" required="true"></col>
+	</row>
+</col>

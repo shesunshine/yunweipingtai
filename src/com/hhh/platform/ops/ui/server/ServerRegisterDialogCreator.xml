@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="26" invisibleBinding="a.is_watch" offsetw="0" offseth="0"
+	defaultWidth="500">
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="服务器编号" width="25" style="left"></col>
+		<col num="a12" type="text" binding="server_id" width="55"
+			offsetw="1" style="border" info="服务器编号" enable="false"></col>
+		<col num="a11" type="label" info="服务器用途" width="25" style="center"></col>
+		<col num="a12" type="combo" binding="a.use_type" width="35"
+			offsetw="1" style="border" required="false" info="用途"></col>
+
+		<col num="a12" type="checkbox" binding="is_watch_select" width="25"
+			offsetw="4" style="border" info="是否监控" et="selection"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="品牌类型" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.server_model" width="55"
+			required="false" offsetw="1" style="border" info="品牌类型"></col>
+		<col num="a11" type="label" info="产品类别" width="25" style="center"></col>
+		<col num="a12" type="combo" binding="a.p_type" width="35"
+			required="false" offsetw="1" style="border" info="产品类别"></col>
+		<col num="a11" type="label" info="产品结构" width="30" style="center"></col>
+		<col num="a12" type="combo" binding="a.p_structure" width="35"
+			offsetw="1" style="border" required="false" info="产品结构"></col>
+	</row>
+
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="CPU型号" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.cpu_model" width="55"
+			required="true" offsetw="1" style="border" info="CPU型号"></col>
+		<col num="a11" type="label" info="CPU频率(Hz)" width="25" style="center"></col>
+		<col num="a12" type="text" binding="a.cpu_hz" width="35" offsetw="1"
+			style="border" required="true" info="CPU频率"></col>
+		<col num="a11" type="label" info="CPU核心" width="30" style="center"></col>
+		<col num="a12" type="combo" binding="a.cpu_core_num" width="35"
+			offsetw="1" style="border" required="false" info="CPU核心"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="RAM型号" width="25" style="left"></col>
+		<col num="a12" type="combo" binding="a.ram_type" width="55"
+			required="true" offsetw="1" style="border" info="RAM型号"></col>
+		<col num="a11" type="label" info="RAM容量(GB)" width="25" style="center"></col>
+		<col num="a12" type="text" binding="a.ram_gb" width="35" offsetw="1"
+			style="border" required="true" info="RAM容量"></col>
+		<col num="a11" type="label" info="RAM最大容量(GB)" width="30" style="center"></col>
+		<col num="a12" type="text" binding="a.ram_gb_max" width="35"
+			offsetw="1" style="border" required="false" info="RAM最大容量"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="HDD磁盘阵列" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.raid" width="55" required="true"
+			offsetw="1" style="border" info="HDD磁盘阵列"></col>
+		<col num="a11" type="label" info="HDD容量(GB)" width="25" style="center"></col>
+		<col num="a12" type="text" binding="a.hdd_gb" width="35" offsetw="1"
+			style="border" required="true" info="HDD容量"></col>
+		<col num="a11" type="label" info="HDD接口类型" width="30" style="center"></col>
+		<col num="a12" type="combo" binding="a.hdd_port" width="35"
+			offsetw="1" style="border" required="false" info="HDD接口类型"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="操作系统" width="25" style="left"></col>
+		<col num="a12" type="combo" binding="a.os_type" width="55"
+			required="false" offsetw="1" style="border" info="操作系统"></col>
+		<col num="a11" type="label" info="系统版本" width="25" style="center"></col>
+		<col num="a12" type="text" binding="a.os_info" width="101"
+			offsetw="1" style="border" required="true" info="系统版本"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="网络控制器" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.web_controller" width="55"
+			required="false" offsetw="1" style="border" info="网络控制器"></col>
+		<col num="a11" type="label" info="网络带宽" width="25" style="center"></col>
+		<col num="a12" type="text" binding="a.web_size" width="101"
+			offsetw="1" style="border" required="false" info="网络带宽"></col>
+	</row>
+	
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="存放位置" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.site" width="182"
+			required="false" offsetw="1" style="border" info="存放位置"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="供应商" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.provider" width="182"
+			required="false" offsetw="1" style="border" info="供应商"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5"
+		defaultHeight="50">
+		<col num="a11" type="label" info="备注" width="25" style="left"></col>
+		<col num="a12" type="textarea" binding="a.mark" width="182"
+			required="false" offsetw="1" style="border" info="备注"></col>
+	</row>
+
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="登记人" width="25" style="left"></col>
+		<col num="a12" type="text" binding="a.add_user" width="55"
+			offsetw="1" style="border" enable="false"></col>
+		<col num="a11" type="label" info="登记日期" width="25" style="right"></col>
+		<col num="a12" type="date" binding="a.add_date" offsetw="1" width="35"
+			style="border,drop_down,medium" enable="false"></col>
+	</row>
+</col>

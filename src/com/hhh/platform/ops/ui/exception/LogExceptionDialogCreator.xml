@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="26" invisibleBinding="a.re_id;a.dp_id" offsetw="0"
+	offseth="0" defaultWidth="300">
+	<row num="a1" type="composite" style="none" offseth="5" offsetw="5">
+		<col num="a11" type="label" info="产品编号" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.pd_code" width="35" offsetw="1"
+			style="border" info="产品编号"></col>
+		<col num="a11" type="label" info="产品名称" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.pd_name" width="55" offsetw="1"
+			style="border" enable="false" info="产品名称"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="5" offsetw="5">
+		<col num="a11" type="label" info="部署编号" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.dp_code" width="35" offsetw="1"
+			style="border" info="部署编号"></col>
+		<col num="a11" type="label" info="网站名" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.dp_name" width="55" offsetw="1"
+			style="border" enable="true" info="网站名"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="记录日期" width="15" style="left"></col>
+		<col num="a12" type="date" binding="a.write_date" offsetw="1" width="35"
+			style="border,drop_down,medium" enable="false"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="登录人" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.login_user" offsetw="1" width="35"
+			style="border" enable="false" info="登录人"></col>
+			<col num="a11" type="label" info="模块" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.module" width="55" offsetw="1"
+			style="border" enable="true" info="模块"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15"
+		defaultHeight="100" offsetw="5">
+		<col num="a11" type="label" info="记录内容" width="15" style="left"></col>
+		<col num="a12" type="textarea" binding="a.content" width="106"
+			offsetw="1" style="border" info="记录内容"></col>
+	</row>
+	
+	
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="处理人" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.deal_user" width="35"
+			offsetw="1" style="border" enable="false"></col>
+		<col num="a11" type="label" info="处理状态" width="15" style="right"></col>
+		<col num="a12" type="combo" binding="a.deal_status" width="16"
+			offsetw="1" style="border" et="selection" enable="false"></col>
+		<col num="a11" type="label" info="处理日期" width="14" style="right"></col>
+		<col num="a12" type="date" binding="a.deal_date" offsetw="1" width="24"
+			style="border,drop_down,medium" enable="false"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15"
+		defaultHeight="100" offsetw="5">
+		<col num="a11" type="label" info="原因或/n处理方法" width="15" style="left"></col>
+		<col num="a12" type="textarea" binding="a.mark" width="106"
+			offsetw="1" style="border" info="原因/处理方法"></col>
+	</row>
+</col>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<col num="0" type="composite" rowWidthEqual="true" defaultStyle="none"
+	defaultHeight="26" invisibleBinding="" offsetw="0"
+	offseth="0" defaultWidth="500">
+	<!-- <row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="项目编号" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.xm_code" width="35"
+			offsetw="1" style="border" required="true" info="项目编号"></col>
+		<col num="a12" type="button" binding="xm_select" width="10"
+			offsetw="0" style="border" required="true" info="选择"></col>
+		<col num="a11" type="label" info="项目名称" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.xm_name" width="55"
+			offsetw="1" style="border" enable="false" info="项目名称"></col>
+	</row> -->
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="产品编号" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.code" width="45"
+			offsetw="1" style="border" info="产品编号" enable="false"></col>
+		<col num="a11" type="label" info="产品名称" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.name" width="55"
+			offsetw="1" style="border" required="true" info="产品名称"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="业务类型" width="15" style="left"></col>
+		<col num="a12" type="combo" binding="a.yw_type" width="25" required="true"
+			offsetw="1" style="border" info="业务类型"></col>
+		<col num="a11" type="label" info="代码类型" width="15" style="center"></col>
+		<col num="a12" type="combo" binding="a.dm_type" width="25"
+			offsetw="1" style="border" required="true" info="代码类型"></col>
+		<col num="a11" type="label" info="版本号" width="15" style="center"></col>
+		<col num="a12" type="text" binding="a.version" width="34"
+			offsetw="1" style="border" required="true" info="版本号"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15"
+		defaultHeight="100" offsetw="5">
+		<col num="a11" type="label" info="备注" width="15" style="left"></col>
+		<col num="a12" type="textarea" binding="a.mark" width="116"
+			offsetw="1" style="border" info="备注"></col>
+	</row>
+	<row num="a1" type="composite" style="none" offseth="15" offsetw="5">
+		<col num="a11" type="label" info="登记人" width="15" style="left"></col>
+		<col num="a12" type="text" binding="a.add_user" width="45"
+			offsetw="1" style="border" enable="false"></col>
+		<col num="a11" type="label" info="登记日期" width="15" style="right"></col>
+		<col num="a12" type="date" binding="a.add_date" offsetw="1" width="30"
+			style="border,drop_down,medium" enable="false"></col>
+	</row>
+</col>
